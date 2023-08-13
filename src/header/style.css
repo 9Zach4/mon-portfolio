@@ -163,7 +163,7 @@
 
 @media (min-width: 992px) {
     .menu__container {
-        margin-left: 33.3333%;
+        margin-left: 42%;
     }
     .the_menu {
         padding-top: 10vh;
@@ -185,6 +185,8 @@
 
 .the_menu .menu_item>a:hover {
     color: var(--text-color-3);
+    transition: 0.3s;
+    transform: scale(1.1);
 }
 
 @media (min-width: 768px) {

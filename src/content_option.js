@@ -67,34 +67,76 @@ const skills = [{
     },
 ];
 
-const dataportfolio = [{
-
-
+const dataportfolio = [
+    {    
+        id : 1,   
         img: "https://live.staticflickr.com/65535/53115162387_d570f231e3_c_d.jpg",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        language: "HTML/CSS",
     },
+
     {   
+        id : 2,
         img: "https://live.staticflickr.com/65535/53116329064_5f29a9f7e8_c_d.jpg" ,
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        language: "SEO",
     },
-    {
+
+    {   
+        id : 3,
         img: "https://live.staticflickr.com/65535/53115450972_0e5825dc52_c_d.jpg",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        language: "Node.js",
     },
-    {
+
+    {   
+        id : 4, 
         img: "https://live.staticflickr.com/65535/53115450882_04d217b41e_c_d.jpg",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        language: "Javascript",
     },
-    {
+
+    {   
+        id : 5,
         img: "https://live.staticflickr.com/65535/53116751920_2982c76e26_w_d.jpg",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        language: "React.js",
     },
 ];
+
+const buttonsGallery = [ {
+    name: "Tous",
+    value: "all"
+  },
+  {
+    name: "HTML/CSS",
+    value: "html/css"
+  },
+  {
+    name: "SEO",
+    value: "seo"
+  },
+  {
+    name: "Node.js",
+    value: "node.js"
+  },
+  {
+    name: "Javascript",
+    value: "javascript"
+  },
+    {
+    name: "React.js",
+    value: "react.js"
+    },
+
+];
+
+
 
 const contactConfig = {
     YOUR_EMAIL: "test@test.com",
@@ -120,4 +162,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    buttonsGallery,
 };

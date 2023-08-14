@@ -10,6 +10,7 @@
           "hyphens"
         ]
       }
-    ]
+    ],
+    "css-prefix-order": "off"
   }
 }

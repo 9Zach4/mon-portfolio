@@ -9,6 +9,8 @@ import {useState} from 'react';
 export const Portfolio = () => {
 
   const [ currentFilter, setCurrentFilter ] = useState('all');
+  
+  
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -22,34 +24,69 @@ export const Portfolio = () => {
             <h1 className="display-4 mb-4"> Portfolio </h1>{" "}
             <hr className="t_border my-4 ml-0 text-left" />
             <div className="filter-buttons">
-    <button
-      className={currentFilter === "all" ? "active" : ""}
-      onClick={() => setCurrentFilter("all")}>TOUS  
-    </button>
+            <button 
+               id = "button_h"
+               className={`ac_btn btn ${currentFilter === "all" ? "selected" : ""}`}
+               onClick={() => setCurrentFilter("all")}> Tous
+     
+    
+    <div className="ring one"></div>
+    <div className="ring two"></div>
+    <div className="ring three"></div>
+  
+</button>
 
     <button
-      className={currentFilter === "HTML/CSS" ? "active" : ""}
+      id = "button_h"
+      className={`ac_btn btn ${currentFilter === "HTML/CSS" ? "active" : ""}`}
       onClick={() => setCurrentFilter("HTML/CSS")}> HTML/CSS
+      
+      <div className="ring one"></div>
+      <div className="ring two"></div>
+      <div className="ring three"></div>
+
+
     </button>
 
     <button 
-      className={currentFilter === "Javascript" ? "active" : ""}
+      id = "button_h"
+      className= {`ac_btn btn ${currentFilter === "Javascript" ? "active" : ""}`}
       onClick={() => setCurrentFilter("Javascript")}> Javascript
+
+      <div className="ring one"></div>
+      <div className="ring two"></div>
+      <div className="ring three"></div>
+
     </button>
 
     <button
-      className={currentFilter === "React.Js" ? "active" : ""}
+      id = "button_h"
+      className= {`ac_btn btn ${currentFilter === "React.Js" ? "active" : ""}`}
       onClick={() => setCurrentFilter("React.Js")}> React.js 
+
+       <div className="ring one"></div>
+       <div className="ring two"></div>
+       <div className="ring three"></div>
     </button>
 
     <button
-      className={currentFilter === "Node.Js" ? "active" : ""}
-      onClick={() => setCurrentFilter("Node.Js")}> Node.js
+      id = "button_h"
+      className= {`ac_btn btn ${currentFilter === "Node.Js" ? "active" : ""}`}
+      onClick={() => setCurrentFilter("Node.Js")}> Node.Js
+
+       <div className="ring one"></div>
+       <div className="ring two"></div>
+       <div className="ring three"></div>
     </button>
 
     <button 
-      className={currentFilter === "SEO" ? "active" : ""} 
+      id = "button_h"
+      className= {`ac_btn btn ${currentFilter === "SEO" ? "active" : ""}`}
       onClick={() => setCurrentFilter("SEO")}> SEO
+
+        <div className="ring one"></div>
+        <div className="ring two"></div>
+        <div className="ring three"></div>
     </button>
 
   </div>

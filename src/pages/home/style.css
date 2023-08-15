@@ -171,7 +171,12 @@ section {
     .name-title {
         font-size: 3rem;
     }
+    .pb-5 {
+        display: flex;
+    flex-wrap: wrap;
+    }
 }
+
 
 .typewriter-text {
     color: rgb(158, 8, 245);

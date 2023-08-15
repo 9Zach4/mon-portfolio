@@ -62,6 +62,8 @@ export const About = () => {
           <Col lg="7" className="grid-container">
 
             
+
+            
             {/* {skills.map((skills, i) => {
               return (
                 <div key={i}>

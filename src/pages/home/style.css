@@ -158,6 +158,7 @@ section {
 }
 
 
+
 @media (max-width:991.98px) {
    
     .intro_sec .block {
@@ -173,7 +174,8 @@ section {
     }
     .pb-5 {
         display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+        row-gap: 20px;
     }
 }
 

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
+  
     <HelmetProvider>
       <section id="home" className="home">
         <Helmet>
@@ -62,6 +63,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        
       </section>
     </HelmetProvider>
   );

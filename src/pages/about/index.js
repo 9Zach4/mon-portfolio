@@ -58,8 +58,11 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">Mes outils</h3>
           </Col>
+
           <Col lg="7" className="grid-container">
-            {skills.map((skills, i) => {
+
+            
+            {/* {skills.map((skills, i) => {
               return (
                 <div key={i}>
                   <Card className="skill-card">
@@ -67,9 +70,10 @@ export const About = () => {
                       <h3 className="card-title">{skills.name}</h3>
                     </Card.Body>
                   </Card>
+
                 </div>
               );
-            })}
+            })} */}
           </Col>
         </Row>
       </Container>

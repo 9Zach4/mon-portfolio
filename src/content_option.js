@@ -81,6 +81,7 @@ const dataportfolio = [
         img: "https://live.staticflickr.com/65535/53116329064_5f29a9f7e8_c_d.jpg" ,
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+      
         language: "SEO",
     },
 
@@ -89,7 +90,7 @@ const dataportfolio = [
         img: "https://live.staticflickr.com/65535/53115450972_0e5825dc52_c_d.jpg",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
-        language: "Node.js",
+        language: "Node.Js",
     },
 
     {   
@@ -105,7 +106,7 @@ const dataportfolio = [
         img: "https://live.staticflickr.com/65535/53116751920_2982c76e26_w_d.jpg",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
-        language: "React.js",
+        language: "React.Js",
     },
 ];
 

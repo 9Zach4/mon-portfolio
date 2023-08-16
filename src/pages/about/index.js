@@ -2,12 +2,13 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Row, Col, Card, Container } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  worktimeline,
-  skills,
-} from "../../content_option";
+import { dataabout, meta,worktimeline,skills, } from "../../content_option";
+
+import MyComponent from "../../components/parallax/mouse";
+ 
+   
+  
+
 
 export const About = () => {
   return (
@@ -28,7 +29,8 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="7" className="d-flex align-items-center"> 
+
             <div>
               <p>{dataabout.aboutme}</p>
             </div>
@@ -58,6 +60,10 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">Mes outils</h3>
           </Col>
+          
+<div className='wrapper'>
+  <MyComponent/>
+</div>
           {/* <Col lg="7" className="grid-container">
             {skills.map((skills, i) => {
               return (

@@ -10,13 +10,20 @@
 .t_border {
     border-color: var(--text-color) !important;
 }
+.wrapper{
+    padding: 0 10px;
+    background-color: aqua;
+    width: 100%;
 
+}
 .progress-title {
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 20px;
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 @-webkit-keyframes animate-positive {
     0% {

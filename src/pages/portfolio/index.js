@@ -98,9 +98,10 @@ export const Portfolio = () => {
     if (currentFilter === "all" || currentFilter === data.language) {
       return (
         <div key={i} className="po_item">
-          <img src={data.img} alt="" />
+          <img src={data.img} alt="Image de mon projet" />
           <div className="content">
             <p>{data.description}</p> 
+            <a href={data.link}>Lien vers le projet</a>
           </div>
         </div>
       );

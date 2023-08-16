@@ -1,4 +1,5 @@
 const logotext = "Page D'accueil";
+const myName = "Zacharie TOKOTO";
 const meta = {
     title: "Zacharie TOKOTO | Portfolio - Développeur Web",
     description: "Mon portfolio de développeur web.",
@@ -155,6 +156,7 @@ const socialprofils = {
 };
 export {
     meta,
+    myName,
     dataabout,
     dataportfolio,
     worktimeline,

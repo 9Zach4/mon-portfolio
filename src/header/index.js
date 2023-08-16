@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { myName, socialprofils } from "../content_option";
+import  {logotext} from "../content_option";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -53,7 +54,7 @@ const Headermain = () => {
             <a href={socialprofils.linkedin}>LinkedIn</a>
             <a href={socialprofils.github}>Github</a>
             </div>
-            <p className="copyright m-0">copyright {logotext}</p>
+            <p className="copyright m-0">copyright {myName}</p>
           </div>
         </div>
       </header>

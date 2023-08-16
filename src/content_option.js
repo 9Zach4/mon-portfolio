@@ -16,7 +16,7 @@ const introdata = {
 
 const dataabout = {
     title: "Présentation",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    aboutme: "Après avoir fini mes études à la Sorbonne puis enchainé quelque petit boulot dans la grande distribution et dans la restauration, j'ai décidé de changé de cap et de m'orienté vers le domaine de l'informatique afin de devenir développeur fullstack. J'ai donc intégré la formation de développeur web grâce à une formation chez OpenClassroom, qui m'a permis d'acquérir les compétences nécessaires pour devenir développeur web. En mettant à profit toutes mes connaissances acquises  Je suis enthousiaste à l'idée de releverdes nouveaux défis et réaliser pleins de projet concret !",
 };
 const worktimeline = [{
         jobtitle: "Example 1",
@@ -141,18 +141,18 @@ const buttonsGallery = [ {
 
 
 const contactConfig = {
-    YOUR_EMAIL: "test@test.com",
-    description: "Looking forward to hearing from you!",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+    YOUR_EMAIL: "zacharie930@gmail.com",
+    description: " Vous souhaitez travailler avec moi ? Contactez-moi !",
+
+  
     YOUR_SERVICE_ID: "SERVICE_ID",
     YOUR_TEMPLATE_ID: "TEMPLATE_ID",
     YOUR_USER_ID: "USER_ID (PUBLIC_KEY)",
 };
 
 const socialprofils = {
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/",
+    github: "https://github.com/9Zach4",
+    linkedin: "https://www.linkedin.com/in/zacharie-tokoto-b33589180/",
 };
 export {
     meta,

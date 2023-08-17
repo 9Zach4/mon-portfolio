@@ -147,7 +147,12 @@ section {
 #button_h:hover {
     color: var(--primary-color)
 }
-
+.ac_btn .mailMe:hover {
+ color : var(--primary-color);
+}
+.ac_btn .mailMe {
+    color: var(--text-color);
+}
 .mb-1x {
     font-size: 25px;
 }

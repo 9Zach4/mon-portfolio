@@ -3,7 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -45,14 +45,6 @@ export const Home = () => {
                   <Link to="/about">
                     <div id="button_h" className="ac_btn btn">
                       A propos
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contactez moi
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>

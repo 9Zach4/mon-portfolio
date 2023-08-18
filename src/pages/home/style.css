@@ -7,8 +7,6 @@ section {
     transition: all .5s ease-in;
 }
 
-
-
 .btn-portfolio {
     background: var(--primary-color);
     border-radius: 0;
@@ -63,14 +61,11 @@ section {
     }
 }
 
-
-
 .intro_sec .text h1 {
     font-size: 40px;
     margin-bottom: 50px;
     font-weight: 700;
 }
-
 
 .ac_btn {
     padding: 5px 19px;
@@ -162,8 +157,6 @@ section {
     font-size: 83px;
 }
 
-
-
 @media (max-width:991.98px) {
    
     .intro_sec .block {
@@ -185,7 +178,6 @@ section {
         
     }
 }
-
 
 .typewriter-text {
     color: rgb(158, 8, 245);

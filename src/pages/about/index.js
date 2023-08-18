@@ -5,11 +5,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { dataabout, meta,worktimeline } from "../../content_option";
 import { MouseParallax } from "react-just-parallax";
 import MyComponent from "../../components/parallax";
- 
    
-  
-
-
 export const About = () => {
   return (
     <HelmetProvider>
@@ -56,12 +52,13 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+
         <Row className="sec_sp" id ="relou">
           <Col lg="5">
             <h3 className="color_sec py-4">Mes outils</h3>
           </Col>
           <div className='wrapper'>
-          <MouseParallax lerpEase= {0.8} strength={0.015}  enableOnTouchDevice >
+          <MouseParallax lerpEase= {0.8} strength={0.015}  enableOnTouchDevice>
             <MyComponent/>
           </MouseParallax>
           </div>

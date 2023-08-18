@@ -7,6 +7,7 @@ import postman from "../../assets/images/postman.png";
 import sass from "../../assets/images/sass.png";
 import vsCode from "../../assets/images/visual-studio-code.png";
 import git from "../../assets/images/git-bash.png";
+import React from "react";
 import "./style.css";
 
 export default function MyComponent () {
@@ -14,33 +15,15 @@ export default function MyComponent () {
     <div className="wrapper__logo">
 
         <img src={js} alt="logo javascript" />
-      
-    
-       <img src={html} alt="logo html" />
-      
-    
-       <img src={css} alt="logo css"/>
-      
-    
+        <img src={html} alt="logo html" />
+        <img src={css} alt="logo css"/>
         <img src={react} alt="logo react"/>
-
-        <img src={node} alt="logo node"/>
-      
-
+        <img src={node} alt="logo node"/>     
         <img src={sass} alt="logo sass"/>
-
         <img src={postman} alt="logo postman"/>
-
         <img src={vsCode} alt="logo vsCode"/>
-
         <img src={git} alt="logo git"/>
       
-
-
-
-
-
-
     </div>
   );
 }

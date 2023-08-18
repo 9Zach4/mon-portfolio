@@ -35,38 +35,7 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
-    },
-    
-    {
-        name: "C",
-    },
-    
-    {
-        name: "Java",
-    },
-    
-    {
-        name: "Bash",
-    },
 
-    {
-        name: "Powershell",
-    },
-
-    {
-        name: "Reverse Engineering",
-    },
-
-    {
-        name: "Web-Exploitation",
-    },
-
-    {
-        name: "Network Exploitation",
-    },
-];
 
 const dataportfolio = [
     {    
@@ -111,59 +80,22 @@ const dataportfolio = [
     },
 ];
 
-const buttonsGallery = [ {
-    name: "Tous",
-    value: "all"
-  },
-  {
-    name: "HTML/CSS",
-    value: "html/css"
-  },
-  {
-    name: "SEO",
-    value: "seo"
-  },
-  {
-    name: "Node.js",
-    value: "node.js"
-  },
-  {
-    name: "Javascript",
-    value: "javascript"
-  },
-    {
-    name: "React.js",
-    value: "react.js"
-    },
 
-];
-
-
-
-const contactConfig = {
-    YOUR_EMAIL: "zacharie930@gmail.com",
-    description: " Vous souhaitez travailler avec moi ? Contactez-moi !",
-
-  
-    YOUR_SERVICE_ID: "SERVICE_ID",
-    YOUR_TEMPLATE_ID: "TEMPLATE_ID",
-    YOUR_USER_ID: "USER_ID (PUBLIC_KEY)",
-};
 
 const socialprofils = {
     github: "https://github.com/9Zach4",
     linkedin: "https://www.linkedin.com/in/zacharie-tokoto-b33589180/",
 };
+
+
 export {
     meta,
     myName,
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
     introdata,
-    contactConfig,
     socialprofils,
     logotext,
-    buttonsGallery,
+    
 };

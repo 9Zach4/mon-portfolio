@@ -1,0 +1,60 @@
+.wrapper__logo {
+    flex: 1;
+
+}
+.wrapper__logo img {
+   max-width: 70px;   
+    align-self: center;
+}
+.wrapper__logo img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.4s;
+
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper__logo {
+        display: flex;
+        margin: 5px;
+    }
+    .wrapper__logo img {
+    
+        max-width: 85px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1180px) {
+    .wrapper__logo {
+        display: flex;
+        margin: 5px;
+        flex-wrap: wrap;
+
+      
+    
+    }
+    
+    .wrapper__logo img {
+    
+        max-width: 100px;
+    }
+    
+}
+
+
+@media screen and (max-width: 570px) {
+    .wrapper__logo {
+        display: flex;
+        flex: 1;
+        margin: 5px;
+        flex-wrap: wrap;
+    
+    }
+    .wrapper__logo img {
+    
+        max-width: 75px;
+    }
+
+}

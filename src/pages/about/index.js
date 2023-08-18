@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Row, Col, Card, Container } from "react-bootstrap";
-import { dataabout, meta,worktimeline,skills, } from "../../content_option";
-
-import MyComponent from "../../components/parallax/mouse";
+import { Row, Col, Container } from "react-bootstrap";
+import { dataabout, meta,worktimeline } from "../../content_option";
+import { MouseParallax } from "react-just-parallax";
+import MyComponent from "../../components/parallax";
  
    
   
@@ -56,27 +56,15 @@ export const About = () => {
             </table>
           </Col>
         </Row>
-        <Row className="sec_sp">
+        <Row className="sec_sp" id ="relou">
           <Col lg="5">
             <h3 className="color_sec py-4">Mes outils</h3>
           </Col>
-          
-<div className='wrapper'>
-  <MyComponent/>
-</div>
-          {/* <Col lg="7" className="grid-container">
-            {skills.map((skills, i) => {
-              return (
-                <div key={i}>
-                  <Card className="skill-card">
-                    <Card.Body>
-                      <h3 className="card-title">{skills.name}</h3>
-                    </Card.Body>
-                  </Card>
-                </div>
-              );
-            })}
-          </Col> */}
+          <div className='wrapper'>
+          <MouseParallax lerpEase= {0.8} strength={0.015}  enableOnTouchDevice >
+            <MyComponent/>
+          </MouseParallax>
+          </div>
         </Row>
       </Container>
     </HelmetProvider>

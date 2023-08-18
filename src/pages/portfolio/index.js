@@ -88,10 +88,8 @@ export const Portfolio = () => {
         <div className="ring two"></div>
         <div className="ring three"></div>
     </button>
-
   </div>
    </Col>
-        
         </Row>
         <div className="mb-5 po_items_ho">
   {dataportfolio.map((data, i) => {
@@ -106,7 +104,7 @@ export const Portfolio = () => {
         </div>
       );
     }
-    return null; // Don't render if it doesn't match the current filter
+    return null; 
   })}
 </div>
       </Container>

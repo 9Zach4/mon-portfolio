@@ -8,7 +8,7 @@ const meta = {
 const introdata = {
     title: "Zacharie TOKOTO",
     animated: {
-        first: "Bienvenue sur mon porte-folio !"
+        first: "Bienvenue sur mon portfolio !"
     },
     description:"Je viens de terminer ma formation de développeur web. Animé par une passion pour l'informatique, je cherche à relever de nouveaux défis captivants !"
 };

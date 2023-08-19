@@ -10,6 +10,8 @@
 .t_border {
     border-color: var(--text-color) !important;
 }
+
+
 .wrapper{
  width: 100%;
     display: contents;

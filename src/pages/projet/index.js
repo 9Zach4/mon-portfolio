@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useParams,useNavigate  } from 'react-router-dom';
 import {dataportfolio }from '../../content_option.js';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Row, Col, Container } from "react-bootstrap";
@@ -8,19 +8,29 @@ import "./style.css";
 
 
 
-export const ProjetDetail = () => { 
+export const ProjectDetail = (props) => { 
     
     
     const { id } = useParams(); 
-    const project = dataportfolio.find(data => data.id === parseInt(id));
-    console.log(project);
 
+    const navigate = useNavigate();
 
-if (!project) {
-    return <div>Projet non trouvé</div>;
-  }
+    const  [projectSelected, setProjectSelected] = useState(null);
 
+    useEffect(() => {
+        const project = dataportfolio.find(data => data.id === parseInt(id));
+        setProjectSelected(project);
+        
+        if (!project) {
+            navigate ('/');
+          } else {
+            setProjectSelected(project);
+          }
+    }, [id, navigate]);
 
+    if (!projectSelected) {
+        return <div>Loading...</div>;
+      }
 
     return (
         <HelmetProvider>
@@ -32,24 +42,36 @@ if (!project) {
           </Helmet>
                  <Row className="mb-5 mt-3 pt-md-3">
               <Col lg="8">
-                <h1 className="display-4 mb-4">titre</h1>
+                <h1 className="display-4 mb-4">{projectSelected.title}</h1>
                 <hr className="t_border my-4 ml-0 text-left" />
                 </Col>
                 </Row>
                 <Row className="sec_sp">
-                <Col lg="5">
-                <h3 className="color_sec py-4">image</h3>
-                </Col>
-                <Col lg="7" className="d-flex align-items-center">
-                <div>
-                <p>description</p>
-                </div>
-                </Col>
-                </Row>
+    <Col lg="5" className="d-flex align-items-center">
+        <div className="project-image-container">
+            <img src={projectSelected.img} alt={projectSelected.title} className=
+            {projectSelected.id === 4 ? 'special-image' : 'project-image'}
+            />
+        </div>
+    </Col>
+    <Col lg="7" className="d-flex align-items-center">
+      <div className="project-description__wrapper">
+        <div className="project-description">
+            <p>{projectSelected.description}</p>
+        </div>
+        <div className="project-tags">
+            <ul className="project-tags__list">
+                {projectSelected.tags.map((tag, i) => {
+                    return (
+                        <li key={i}>{tag}</li>
+                    )
+                })}
+            </ul>
+        </div>
+      </div>
+    </Col>
+</Row>
 
-
-
-    
        </Container>
         </HelmetProvider>
         
@@ -62,4 +84,4 @@ if (!project) {
 
   
 
-export default ProjetDetail;
+export default ProjectDetail;

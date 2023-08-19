@@ -4,7 +4,7 @@
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
-    --text-color-3: rgb(129, 13, 224);
+    --text-color-3: rgb(107, 41, 212);
     --overlay-color: rgb(12 12 12 / 63%);
 }
 
@@ -31,6 +31,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 h1,

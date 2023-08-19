@@ -3,7 +3,7 @@ import { useParams,useNavigate  } from 'react-router-dom';
 import {dataportfolio }from '../../content_option.js';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Row, Col, Container } from "react-bootstrap";
-import { meta } from "../../content_option";
+import { meta } from "../../content_option.js";
 import "./style.css";
 
 
@@ -46,21 +46,38 @@ export const ProjectDetail = (props) => {
                 <hr className="t_border my-4 ml-0 text-left" />
                 </Col>
                 </Row>
+
                 <Row className="sec_sp">
     <Col lg="5" className="d-flex align-items-center">
-        <div className="project-image-container">
+
+        <div className="project-image-container"> 
             <img src={projectSelected.img} alt={projectSelected.title} className=
             {projectSelected.id === 4 ? 'special-image' : 'project-image'}
             />
         </div>
+
     </Col>
+
+
     <Col lg="7" className="d-flex align-items-center">
+
       <div className="project-description__wrapper">
         <div className="project-description">
+
             <p>{projectSelected.description}</p>
+            <button className="project-description__button">
+                <a href={projectSelected.link} target="_blank" rel="noreferrer">Voir le site</a>
+            </button>
+            <button className="project-description__button">
+                <a href={projectSelected.githubLink} target="_blank" rel="noreferrer">Voir le code</a>
+            </button>
+
         </div>
+
+        
+
         <div className="project-tags">
-            <ul className="project-tags__list">
+            <ul>
                 {projectSelected.tags.map((tag, i) => {
                     return (
                         <li key={i}>{tag}</li>
@@ -68,8 +85,13 @@ export const ProjectDetail = (props) => {
                 })}
             </ul>
         </div>
+
+
+
       </div>
     </Col>
+
+
 </Row>
 
        </Container>

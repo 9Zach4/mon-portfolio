@@ -183,3 +183,14 @@ section {
     color: rgb(158, 8, 245);
 }
   
+
+@media (max-width:300px) {
+    .mb-1x {
+        font-size: 20px;
+    }
+    
+    .name-title {
+        font-size: 2rem;
+    }
+}
+    

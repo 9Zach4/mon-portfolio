@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 import FilterButtons from "../../components/filter";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const Portfolio = () => {
@@ -18,7 +19,7 @@ export const Portfolio = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4"> Portfolio </h1>
+            <h1 className="display-4 mb-4"> Mes Projets </h1>
             <hr className="t_border my-4 ml-0 text-left" />
 
             <FilterButtons
@@ -30,13 +31,13 @@ export const Portfolio = () => {
 
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
-            if (currentFilter === "all" || currentFilter === data.language) {
+            if (currentFilter === "all" || currentFilter === data.tech) {
               return (
                 <div key={i} className="po_item">
                   <img src={data.img} alt="Image de mon projet" />
                   <div className="content">
                     <p>{data.title}</p>
-                    <a href={data.link}>Lien vers le projet</a>
+                    <Link to={`/projet/${data.id}`}>En savoir plus</Link>
                   </div>
                 </div>
               );

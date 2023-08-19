@@ -3,12 +3,10 @@ import React from "react";
 const FilterButtons = ({ currentFilter, setCurrentFilter }) => {
   const buttons = [
     { label: "Tous", value: "all" },
-    { label: "HTML/CSS", value: "HTML/CSS" },
-    { label: "Javascript", value: "Javascript" },
-    { label: "React.js", value: "React.Js" },
-    { label: "Node.Js", value: "Node.Js" },
+    { label: "Front-end", value: "Front-end" },
+    { label: "Back-end", value: "Back-end" },
     { label: "SEO", value: "SEO" },
-    { label: "Gestion de Projet ", value: "Trello" },
+    { label: "Gestion de Projet ", value: "Agile" },
   ];
 
   return (

@@ -8,6 +8,7 @@ const FilterButtons = ({ currentFilter, setCurrentFilter }) => {
     { label: "React.js", value: "React.Js" },
     { label: "Node.Js", value: "Node.Js" },
     { label: "SEO", value: "SEO" },
+    { label: "Gestion de Projet ", value: "Trello" },
   ];
 
   return (

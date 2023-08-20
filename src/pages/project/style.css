@@ -46,7 +46,7 @@
     color: var(--text-color-3);
 }
 .project-description__button {
-    margin: 10px 20px 10px 0;
+    margin: 10px 20px 10px 0px;
     padding: 5px 10px;
     border: 1px solid var(--text-color);
     font-size: 20px;

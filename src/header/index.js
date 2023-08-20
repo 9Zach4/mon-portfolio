@@ -21,7 +21,9 @@ const Headermain = () => {
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
+          <button className="menu__button  nav_ac" onClick={handleToggle}
+           aria-label={isActive ? "Fermer le menu" : "Ouvrir le menu"}
+          >
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
           

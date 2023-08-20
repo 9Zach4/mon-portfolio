@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { myName, socialprofils } from "../content_option";
 import  {logotext} from "../content_option";
 
-const Headermain = () => {
+const Headermain = () => { // header
   const [isActive, setActive] = useState("false");
 
-  const handleToggle = () => {
+  const handleToggle = () => { // toggle menu
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
   };
@@ -22,21 +22,20 @@ const Headermain = () => {
           </Link>
           <div className="d-flex align-items-center">
           <button className="menu__button  nav_ac" onClick={handleToggle}
-           aria-label={isActive ? "Fermer le menu" : "Ouvrir le menu"}
+           aria-label={isActive ? "Fermer le menu" : "Ouvrir le menu"} // accessibility
           >
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
-          
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}> 
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link> 
                   </li>
                   <li className="menu_item">
                     <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
@@ -52,12 +51,12 @@ const Headermain = () => {
             <div className="d-flex">
             <a href={socialprofils.linkedin}>LinkedIn</a>
             <a href={socialprofils.github}>Github</a>
-            </div>
+            </div> 
             <p className="copyright m-0">copyright {myName}</p>
           </div>
         </div>
       </header>
-      <div className="br-top"></div>
+      <div className="br-top"></div> 
       <div className="br-bottom"></div>
       <div className="br-left"></div>
       <div className="br-right"></div>

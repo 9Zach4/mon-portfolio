@@ -8,7 +8,7 @@ import MyComponent from "../../components/parallax";
    
 export const About = () => {
   return (
-    <HelmetProvider>
+    <HelmetProvider> 
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
@@ -39,7 +39,7 @@ export const About = () => {
           <Col lg="7">
             <table className="table caption-top">
               <tbody>
-                {worktimeline.map((data, i) => {
+                {worktimeline.map((data, i) => { // mappage des données
                   return (
                     <tr key={i}>
                       <th scope="row">{data.jobtitle}</th>

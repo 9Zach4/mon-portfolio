@@ -12,14 +12,14 @@ export const Socialicons = (params) => {
     <div className="stick_follow_icon">
       <ul>
        
-        {socialprofils.github && (
+        {socialprofils.github && ( // social icons
           <li>
             <a href={socialprofils.github}target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
           </li>
         )}
-        {socialprofils.linkedin && (
+        {socialprofils.linkedin && ( // social icons
           <li>
             <a href={socialprofils.linkedin}target="_blank" rel="noopener noreferrer">
               <FaLinkedin />

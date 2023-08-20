@@ -116,7 +116,7 @@ const dataportfolio = [
         id : 5,
         img: "https://live.staticflickr.com/65535/53116751920_2982c76e26_w_d.jpg",
         title: "'Kasa', location immobilière",
-        description: "Kasa est un site web de location immobilière. Il a été réalisé dans le cadre de ma formation de développeur web. L'objectif de ce projet était de réaliser un site web dynamique en utilisant React.Js, au cours de ce projet j'ai pu me familiariser avec la notion et le développement des composants fonctionnels, ainsi que la notion de state et de props.",
+        description: "Kasa est un site web de location immobilière. Il a été réalisé dans le cadre de ma formation de développeur web. L'objectif de ce projet était de réaliser un site web dynamique en utilisant React.Js, au cours de ce projet j'ai pu me familiariser avec la notion et le développement des composants fonctionnels, ainsi que la notion de state et de props. Bien qu'au début du projet  j'ai eu du mal a le fonctionnement des hooks, j'ai pu surmonter ce problème en retravaillant les parties du code qui me posaient problème tout en relisant la documentation de react.",
         link: "https://9zach4.github.io/P6/",
         githubLink: "https://github.com/9Zach4/P6",
         language: "React.Js",

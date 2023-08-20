@@ -1,6 +1,6 @@
 import React from "react";
 
-const FilterButtons = ({ currentFilter, setCurrentFilter }) => {
+const FilterButtons = ({ currentFilter, setCurrentFilter }) => { // filter buttons
   const buttons = [
     { label: "Tous", value: "all" },
     { label: "Front-end", value: "Front-end" },
@@ -10,15 +10,15 @@ const FilterButtons = ({ currentFilter, setCurrentFilter }) => {
   ];
 
   return (
-    <div className="filter-buttons">
-      {buttons.map((button, index) => (
+    <div className="filter-buttons"> 
+      {buttons.map((button, index) => ( //mappage des boutons
         <button
           key={index}
           id="button_h"
-          className={`ac_btn btn ${
+          className={`ac_btn btn ${ // active button
             currentFilter === button.value ? "active" : ""
           }`}
-          onClick={() => setCurrentFilter(button.value)}
+          onClick={() => setCurrentFilter(button.value)} // click button
         >
           {button.label}
           <div className="ring one"></div>

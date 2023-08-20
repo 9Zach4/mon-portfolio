@@ -10,7 +10,7 @@ import git from "../../assets/images/git-bash.png";
 import React from "react";
 import "./style.css";
 
-export default function MyComponent () {
+export default function MyComponent () { // logo tech dnas le parallax
   return (
     <div className="wrapper__logo">
 

@@ -18,7 +18,7 @@
 
 }
 
-#relou { 
+#asset__row  { 
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -36,7 +36,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    #relou {
+    #asset__row {
         flex-wrap: wrap;
     }
     

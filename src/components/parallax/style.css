@@ -1,6 +1,5 @@
 .wrapper__logo {
     flex: 1;
-
 }
 .wrapper__logo img {
    max-width: 70px;   
@@ -18,43 +17,30 @@
         display: flex;
         margin: 5px;
     }
-    .wrapper__logo img {
-    
+    .wrapper__logo img {  
         max-width: 85px;
-    }
-    
+    }   
 }
-
 
 @media screen and (max-width: 1180px) {
     .wrapper__logo {
         display: flex;
         margin: 5px;
         flex-wrap: wrap;
-
-      
-    
     }
-    
     .wrapper__logo img {
-    
         max-width: 100px;
-    }
-    
+    }   
 }
-
 
 @media screen and (max-width: 570px) {
     .wrapper__logo {
         display: flex;
         flex: 1;
         margin: 5px;
-        flex-wrap: wrap;
-    
+        flex-wrap: wrap;    
     }
     .wrapper__logo img {
-    
         max-width: 75px;
     }
-
 }

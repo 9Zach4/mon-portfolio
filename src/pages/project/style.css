@@ -71,8 +71,10 @@
 
 @media screen and (max-width: 991px) {
     .project-description__button {
-        font-size: 20px;
-        margin: 15px;
+       
+    
+    margin: 10px;
+  
     }
 
 

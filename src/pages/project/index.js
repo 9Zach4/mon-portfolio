@@ -65,9 +65,11 @@ export const ProjectDetail = (props) => {
         <div className="project-description">
 
             <p>{projectSelected.description}</p>
+            {projectSelected.link && (
             <button className="project-description__button">
                 <a href={projectSelected.link} target="_blank" rel="noreferrer">Voir le site</a>
             </button>
+            )}
             <button className="project-description__button">
                 <a href={projectSelected.githubLink} target="_blank" rel="noreferrer">Voir le code</a>
             </button>
